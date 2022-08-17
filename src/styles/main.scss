@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	margin: 0;
+  background-color: #F7F7F7;
 }
 ol, ul {
   list-style: none;
@@ -59,4 +60,16 @@ img {
   width: 100%;
   display: block;
   outline: none;
+}
+
+button {
+  width: 100%;
+  max-width: 160px;
+  font-size: $font-sm;
+  color: $white;
+  text-align: center;
+  background-color: $dark-green;
+  padding: 8px 0;
+  border: none;
+  cursor: pointer;
 }

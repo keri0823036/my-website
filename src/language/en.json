@@ -1,5 +1,12 @@
 {
 	"header": {
 		"about": "About"
+	},
+	"home": {
+		"banner": {
+			"hello": "Hi, I am Keri!",
+			"subtitle": "25 years old | Front End Engineer | Website Engineer",
+			"resume": "Resume"
+		}
 	}
 }

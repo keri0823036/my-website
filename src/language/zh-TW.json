@@ -1,5 +1,12 @@
 {
 	"header": {
 		"about": "關於我"
+	},
+	"home": {
+		"banner": {
+			"hello": "你好，我是 Keri！",
+			"subtitle": "25歲｜前端工程師｜網頁工程師",
+			"resume": "我的履歷"
+		}
 	}
 }
