@@ -1,0 +1,10 @@
+@mixin flex($align-items: center, $justify-content: center) {
+  display: flex;
+  @if $align-items == $justify-content {
+    align-items: $align-items;
+    justify-content: $align-items;
+  } @else {
+    align-items: $align-items;
+    justify-content: $justify-content;
+  }
+}

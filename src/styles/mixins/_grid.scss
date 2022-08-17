@@ -1,0 +1,10 @@
+@mixin grid($column, $mode: auto, $justify-content: center, $align-items: center) {
+  display: grid;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  @if $mode == auto {
+    grid-template-columns: repeat(#{$column}, minmax(0, 1fr));
+  } @else if $mode == custom {
+    grid-template-columns: $column;
+  }
+}
