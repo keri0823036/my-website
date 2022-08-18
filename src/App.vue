@@ -1,20 +1,23 @@
 <template>
-  <div class="lang-switch">
-    <input type="radio" id="one" value="zh-TW" v-model="locale" />
-    <label for="one">CH</label>
-    /
-    <input type="radio" id="two" value="en" v-model="locale" />
-    <label for="two">EN</label>
+  <div id="header" class="header">
+    <div class="header__left">
+      <router-link to="/">Keri T.</router-link>
+    </div>
+    <div class="header__right">
+      <router-link class="header__right__navi" to="/about" v-t="'header.about'" />
+      <span>|</span>
+      <LangSwitch class="header__right__lang" />
+    </div>
   </div>
   <router-view />
-  <h1 v-t="'hello'" />
 </template>
 
 <script>
 import { useI18n } from "vue-i18n"
+import LangSwitch from '@/components/LangSwitch'
 
 export default {
-  name: "App",
+  components: { LangSwitch },
   setup() {
     const { locale } = useI18n()
 
@@ -26,7 +29,29 @@ export default {
 </script>
 
 <style lang="scss">
-h1 {
-  color: $dark-green;
+.header {
+  @include position(fixed, $top: 0);
+  @include flex($justify-content: space-between, );
+  width: calc(100% - 28%);
+  padding: 60px 14%;
+  z-index: $z-header;
+
+  &__left {
+    font-size: $font-lg;
+  }
+
+  &__right {
+    @include flex();
+    font-size: $font-m;
+
+    &__lang {
+      min-width: 88px;
+    }
+
+    span {
+      color: $light-gray;
+      margin: 0 12px;
+    }
+  }
 }
 </style>

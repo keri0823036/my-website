@@ -23,6 +23,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   font-family: 'Noto Sans', 'Noto Sans TC';
+  color: $dark-gray;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,6 +51,7 @@ table {
 }
 
 a {
+  color: $dark-gray;
   text-decoration: none;
 }
 
