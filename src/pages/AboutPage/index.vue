@@ -14,17 +14,39 @@
         </div>
       </div>
     </div>
+    <div class="skills">
+      <h4 class="skills__title" v-t="'about.skills.title'" />
+      <div class="skills__wrap">
+        <SkillCard 
+          v-for="skill in skillsData"
+          :key="skill.key"
+          :data="skill"
+        />
+      </div>
+    </div>
   </div>
 </template>
 <script>
+import SkillCard from '@/components/SkillCard'
+import { skillsData } from  './aboutData'
+
 export default {
-  name: 'AboutPage'
+  name: 'AboutPage',
+  components: { SkillCard },
+	setup() {
+    return { skillsData }
+	}
 }
 </script>
 <style lang="scss" scoped>
+#about-page {
+  & > div:not(:last-of-type) {
+    border-bottom: 1px solid $light-green;
+  }
+}
+
 .intro {
   padding: 60px 14% 80px;
-  border-bottom: 1px solid $light-green;
 
   &__leaf {
     @include position(absolute, $top: -126px, $right: 10%);
@@ -57,6 +79,20 @@ export default {
         line-height: 125%;
       }
     }
+  }
+}
+
+.skills {
+  padding: 80px 14%;
+
+  &__title {
+    font-size: $font-lg;
+    margin-bottom: 80px;
+  }
+
+  &__wrap {
+    @include grid(3, $justify-content: space-between, $align-items: start);
+    gap: 40px 80px;
   }
 }
 </style>

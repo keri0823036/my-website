@@ -24,6 +24,70 @@
 		"intro": {
 			"hello": "你好，我是 Keri！",
 			"desc": "自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文"
+		},
+		"skills": {
+			"title": "專長與技能",
+			"javascript": {
+				"title": "JavaScript",
+				"detail_list": [
+					"熟悉 ES5、ES6 語法",
+					"使用 ESLint 統一程式碼結構品質",
+					"擁有程式抽象、分層化的能力，並善用元件拆分進行網站開發",
+					"能夠善用外部套件進行開發，如：Storybook、Swiper...等",
+					"熟悉 TypeScript 的 Type System 與 Interface",
+					"使用 TypeScript 開發專案，減少 Bug 頻率並降低維護難度"
+				]
+			},
+			"vue": {
+				"title": "Vue",
+				"detail_list": [
+					"使用 Vue Cli 快速建立專案",
+					"規劃並利用 Components 拆分功能以提高元件複用性",
+					"使用 Vue Router 夾帶資料，在同頁面下渲染不同的內容",
+					"使用 Vue Asiox 串接 API",
+					"使用 Nuxt.js 提供的 SSR 達到更好的瀏覽體驗與 SEO"
+				]
+			},
+			"web_layout": {
+				"title": "Web Layout",
+				"detail_list": [
+					"熟悉 Sass / SCSS 撰寫方式與 CSS 框架用法，如：Tailwind、Bootstrap...等",
+					"熟悉 HTML5 各項標籤用法",
+					"熟悉 RWD 響應式網頁規劃",
+					"擁有 UI/ UX 設計師合作經驗"
+				]
+			},
+			"shopify": {
+				"title": "Shopify",
+				"detail_list": [
+					"瞭解 Shopify 架站方式與其利弊",
+					"熟悉 Shopify 後台操作介面與其延伸功能",
+					"在 Shopify 的限制下提出解決方案",
+					"熟悉 Liquid 語法並結合 Vue.js 進行開發",
+					"串接 Shopify API 資料，將資料重組成自訂格式"
+				]
+			},
+			"testing": {
+				"title": "Testing",
+				"detail_list": [
+					"建置與設定 Jest 測試環境",
+					"拆分測項、規劃 Unit Test 的測試內容",
+					"撰寫 Jest 進行 Unit Test",
+					"建置與設定 Cypress 與 Nightwatch  測試環境",
+					"針對使用者情境規劃 End to End Test的測試內容",
+					"撰寫 Cypress、Nightwatch 進行 End to End Test"
+				]
+			} ,
+			"project_management": {
+				"title": "專案管理",
+				"detail_list": [
+					"熟悉 Git 相關指令與善用 Git Flow...等分支策略",
+					"評估功能執行可行性與時程安排",
+					"擁有跨部門合作、溝通經驗",
+					"版本控管軟體：Bitbucket、GitHub",
+					"專案進度溝通、管理軟體：Notion、Trello、ClickUp"
+				]
+			}
 		}
 	}
 }
