@@ -49,7 +49,7 @@ export default {
     }
 
     span {
-      color: $light-gray;
+      color: $gray-300;
       margin: 0 12px;
     }
   }

@@ -1,0 +1,60 @@
+<template>
+  <div class="project-card">
+		<div class="project-card__image">
+			<img :src="data.imageUrl" />
+		</div>
+		<div class="project-card__content">
+			<h5
+				class="project-card__content__title"
+				v-t="`home.projects.${data.key}.title`"
+			/>
+			<p 
+				class="project-card__content__desc"
+				v-t="`home.projects.${data.key}.desc`"
+			/>
+			<a
+				:href="data.link"
+				class="button"
+				target="_blank"
+				v-t="'home.projects.view_more'"
+			/>
+		</div>
+	</div>
+</template>
+<script>
+export default {
+	props: {
+		data: {
+			type: Object,
+			required: true
+		}
+	}
+}
+</script>
+
+<style lang="scss" scoped>
+.project-card {
+	@include flex;
+	padding: 0 14%;
+
+	&__image {
+		width: 60%;
+		margin-right: 30px;
+		box-shadow: -40px 40px 0 0 $light-green;
+	}
+
+	&__content {
+		width: 40%;
+		margin-left: 30px;
+
+		&__title {
+			font-size: $font-lg;
+			margin-bottom: 20px;
+		}
+		&__desc {
+			line-height: 125%;
+			margin-bottom: 60px;
+		}
+	}
+}
+</style>

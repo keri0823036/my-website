@@ -7,6 +7,17 @@
 			"hello": "Hi, I am Keri!",
 			"subtitle": "25 years old | Front End Engineer | Website Engineer",
 			"resume": "Resume"
+		},
+		"projects": {
+			"rhinoshield": {
+				"title": "RhinoShield",
+				"desc": "Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good."
+			},
+			"trip_app": {
+				"title": "Trip web",
+				"desc": "Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good."
+			},
+			"view_more": "View More"
 		}
 	}
 }

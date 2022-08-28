@@ -23,7 +23,7 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   font-family: 'Noto Sans', 'Noto Sans TC';
-  color: $dark-gray;
+  color: $gray-700;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -52,7 +52,7 @@ table {
 }
 
 a {
-  color: $dark-gray;
+  color: $gray-700;
   text-decoration: none;
 }
 
@@ -62,7 +62,8 @@ img {
   outline: none;
 }
 
-button {
+.button, button {
+  display: block;
   width: 100%;
   max-width: 160px;
   font-size: $font-sm;
