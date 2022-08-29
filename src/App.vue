@@ -4,7 +4,8 @@
       <router-link to="/">Keri T.</router-link>
     </div>
     <div class="header__right">
-      <router-link class="header__right__navi" to="/about" v-t="'header.about'" />
+      <router-link v-if="$route.path==='/about'" class="header__right__navi" to="/" v-t="'header.portfolio'" />
+      <router-link v-else class="header__right__navi" to="/about" v-t="'header.about'" />
       <span>|</span>
       <LangSwitch class="header__right__lang" />
     </div>
@@ -103,6 +104,12 @@ export default {
   &__right {
     @include flex();
     font-size: $font-m;
+
+    &__navi {
+      &:hover {
+        color: $gray-300;
+      }
+    }
 
     &__lang {
       min-width: 88px;
