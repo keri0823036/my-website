@@ -6,7 +6,7 @@
       </div>
       <h1 class="banner__title" v-t="'home.banner.hello'" />
       <h3 class="banner__subtitle" v-t="'home.banner.subtitle'" />
-      <button class="banner__button" v-t="'home.banner.resume'" />
+      <button class="banner__button" v-t="'home.banner.connect'" @click="scrollToElement('#footer')" />
     </div>
     <div class="projects">
       <ProjectCard
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { scrollToElement } from '@/scripts/common'
 import ProjectCard from '@/components/ProjectCard'
 import projectData from  './projectData'
 
@@ -29,7 +30,7 @@ export default {
   name: 'HomePage',
   components: { ProjectCard },
   setup() {
-    return { projectData }
+    return { projectData, scrollToElement }
   }
 }
 </script>

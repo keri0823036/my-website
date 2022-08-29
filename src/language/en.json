@@ -13,7 +13,8 @@
 	"home": {
 		"banner": {
 			"hello": "Hi, I am Keri!",
-			"subtitle": "25 years old | Front End Engineer | Website Engineer"
+			"subtitle": "25 years old | Front End Engineer | Website Engineer",
+			"connect": "Connect Me"
 		},
 		"projects": {
 			"rhinoshield": {

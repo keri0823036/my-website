@@ -6,7 +6,8 @@
 	"home": {
 		"banner": {
 			"hello": "你好，我是 Keri！",
-			"subtitle": "25歲｜前端工程師｜網頁工程師"
+			"subtitle": "25歲｜前端工程師｜網頁工程師",
+			"connect": "聯絡我"
 		},
 		"projects": {
 			"rhinoshield": {
