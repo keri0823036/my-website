@@ -1,6 +1,13 @@
 {
+	"common": {
+		"email": "keri0823036@gmail.com"
+	},
 	"header": {
 		"about": "About"
+	},
+	"footer": {
+		"copyright": "Copyright © 2022 Keri T.",
+		"uicon": "UIcons by <a href=\"https://www.flaticon.com/uicons\">Flaticon</a>"
 	},
 	"home": {
 		"banner": {

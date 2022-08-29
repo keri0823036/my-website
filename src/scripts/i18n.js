@@ -5,7 +5,7 @@ import en from "../language/en.json";
 const i18n = createI18n({
 	legacy: false,
 	locale: "zh-TW",
-	fallbackLocale: "zh-TW",
+	fallbackLocale: "en",
 	messages: {
 		"zh-TW": zh,
 		"en": en

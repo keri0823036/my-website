@@ -21,11 +21,15 @@
         v-html="socialMedia.icon"
       />
     </div>
-    <p class="footer__email">cindy0823036@gmail.com</p>
+    <p
+      class="footer__email"
+      v-t="'common.email'"
+    />
     <div class="footer__line"></div>
-    <p class="footer__uicon-attribute">
-      UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
-    </p>
+    <div class="footer__copyright">
+      <p v-t="'footer.copyright'" />
+      <p v-html="$t('footer.uicon')" />
+    </div>
   </div>
   <div class="go-to-top" @click="scrollToElement('#header')">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="512" height="512">
@@ -137,10 +141,19 @@ export default {
     opacity: 0.3;
   }
 
-  &__uicon-attribute {
-    color: $gray-300;
-    font-size: 12px;
-    text-align: center;
+  &__copyright {
+    @include flex;
+  
+    p {
+      color: $gray-300;
+      font-size: 12px;
+      text-align: center;
+      
+      &:not(:last-of-type) {
+        margin-right: 12px;
+      }
+    }
+
     a {
       color: $gray-300;
       text-decoration: underline;
