@@ -19,5 +19,11 @@
 			},
 			"view_more": "View More"
 		}
+	},
+	"about": {
+		"intro": {
+			"hello": "Hi, I am Keri!",
+			"desc": "Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good."
+		}
 	}
 }
