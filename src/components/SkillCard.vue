@@ -63,6 +63,11 @@ export default {
 		:not(:last-child) {
 			margin-bottom: 4px;
 		}
+
+		::marker {
+			font-size: 8px;
+			margin-right: 4px;
+		}
 	}
 
 	hr {
