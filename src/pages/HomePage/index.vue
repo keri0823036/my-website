@@ -36,7 +36,7 @@ export default {
 
 <style lang="scss" scoped>
 .banner {
-  padding: 272px 0 213px 20%;
+  padding: 100px 0 213px 20%;
 
   &__leaf {
     @include position(absolute, $top: -126px, $right: 10%);
