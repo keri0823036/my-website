@@ -11,6 +11,7 @@
         <div class="intro__content__info">
           <h3 v-t="'about.intro.hello'" />
           <p v-t="'about.intro.desc'" />
+          <button v-t="'about.intro.resume'" />
         </div>
       </div>
     </div>
@@ -88,6 +89,10 @@ export default {
 
       p {
         line-height: 125%;
+      }
+
+      button {
+        margin-top: 32px;
       }
     }
   }
