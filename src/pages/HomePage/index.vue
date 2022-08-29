@@ -50,11 +50,11 @@ export default {
   }
 
   &__title {
-    font-size: $font-lg;
+    font-size: $font-xl;
     margin-bottom: 8px;
   }
   &__subtitle {
-    font-size: $font-m;
+    font-size: $font-lg;
     color: $gray-300;
     margin-bottom: 32px;
   }

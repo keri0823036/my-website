@@ -48,7 +48,7 @@ export default {
 		margin-left: 30px;
 
 		&__title {
-			font-size: $font-lg;
+			font-size: $font-xl;
 			margin-bottom: 20px;
 		}
 		&__desc {

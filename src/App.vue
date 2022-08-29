@@ -69,12 +69,12 @@ export default {
   z-index: $z-header;
 
   &__left {
-    font-size: $font-lg;
+    font-size: $font-xl;
   }
 
   &__right {
     @include flex();
-    font-size: $font-m;
+    font-size: $font-lg;
 
     &__navi {
       &:hover {
@@ -109,7 +109,7 @@ export default {
 
   &__email {
     @include flex;
-    font-size: 12px;
+    font-size: $font-xs;
     text-align: center;
   }
 
@@ -124,7 +124,7 @@ export default {
   
     p {
       color: $gray-300;
-      font-size: 12px;
+      font-size: $font-xs;
       text-align: center;
       
       &:not(:last-of-type) {

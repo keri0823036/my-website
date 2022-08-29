@@ -83,7 +83,7 @@ export default {
       width: 100%;
 
       h3 {
-        font-size: $font-lg;
+        font-size: $font-xl;
         margin-bottom: 48px;
       }
 
@@ -102,7 +102,7 @@ export default {
   padding: 80px 14%;
 
   &__title {
-    font-size: $font-lg;
+    font-size: $font-xl;
     margin-bottom: 80px;
   }
 
@@ -114,7 +114,7 @@ export default {
 .experience {
   padding: 80px 14%;
   &__title {
-    font-size: $font-lg;
+    font-size: $font-xl;
     margin-bottom: 60px;
   }
 

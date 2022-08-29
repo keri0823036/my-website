@@ -71,7 +71,7 @@ export default {
     }
 
     &__company {
-      font-size: $font-m;
+      font-size: $font-lg;
       margin-bottom: 8px;
     }
 

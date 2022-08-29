@@ -53,7 +53,7 @@ export default {
 	}
 
 	&__title {
-		font-size: $font-m;
+		font-size: $font-lg;
 		text-align: center;
 	}
 
