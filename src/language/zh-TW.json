@@ -88,6 +88,89 @@
 					"專案進度溝通、管理軟體：Notion、Trello、ClickUp"
 				]
 			}
+		},
+		"experience": {
+			"title": "工作經歷",
+			"rhinoshield": {
+				"during_date": "2018/08 - 2022/05",
+				"company": "愛進化科技股份有限公司",
+				"job_title": "前端工程師",
+				"detail": [
+					{
+						"title": "開發與維護 11 國購物網站",
+						"list": [
+							"Javascript 與 Liquid 併用，使用 Vue 框架開發動、靜態網頁",
+							"使用 Axios 處理各項 AJAX 請求",
+							"使用 Sass、Scss 開發響應式網頁",
+							"後期使用 Typescript 加強開發的正確率與穩定度",
+							"後期使用 Nuxt.js  以求 SSR 帶給使用者更快的瀏覽體驗與提升網站 SEO",
+							"建立與設定 Shopify Store，排解相關限制造成的問題",
+							"使用 Google App Script 結合 Google Sheet 建立簡易 DB",
+							"與其他前端工程師共同合作開發網站",
+							"與 UI/UX 設計師、後端工程師合作、溝通，完成各式網站需求"
+						]
+					},
+					{
+						"title": "開發全新官網以改善現有結構限制",
+						"list": [
+							"使用 Lerna 管理專案套件，統合所有自建套件結構與版本",
+							"使用 Tailwind 自定義 Design Guideline，讓未來套用樣式更加方便",
+							"與設計師溝通共同開發 Design System，欲建立共同語言、降低溝通成本",
+							"使用 Storybook 開發元件並重新設計其結構以求復用性",
+							"規劃並建立各式名稱規範，如：Variable、Router...等"
+						]
+					},
+					{
+						"title": "持續改進 CI/CD",
+						"list": [
+							"撰寫 Unit Test (Jest)，降低改 A 壞 B 的發生機率，避免程式過度耦合",
+							"撰寫 End to End Test (Cypress、Nightwatch) 並在上線前自動進行測試",
+							"撰寫 Pipeline 腳本以達成測試、上線自動化，加速開發與上線流程"
+						]
+					},
+					{
+						"title": "監控與改善網站速度與體驗",
+						"list": [
+							"Google Pagespeed Insights 提升 15 分",
+    					"導入 Sentry 以紀錄更詳細的 LCP、FCP…等資訊"
+						]
+					},
+					{
+						"title": "協助內部建立 QA Team",
+						"list": [
+							"訪問同事與收集各方資料，定義出 QA 在內部的定位，評估「第一人」需具備的特質",
+    					"主導 QA 主管應徵與面試，與主管共同決定錄取人員，並成功建立起 QA Team",
+    					"與 QA 討論並共同引進測試流程，包含：開發與發佈流程、Git 分支策略...等"
+						]
+					},
+					{
+						"title": "參與新人面試與指導",
+						"list": [
+							"檢核筆試與參與面試，最終與主管共同決定錄取人員",
+    					"製作新人引導文件、帶領新人更快上手工作"
+						]
+					}
+				]
+			},
+			"hakuhodo": {
+				"during_date": "2017/07 - 2017/08",
+				"company": "台灣博報堂",
+				"job_title": "創意設計部門實習生",
+				"detail": [
+					{
+						"title": "創意廣告發想與提案",
+						"list": [
+							"實習期間曾參與逸萱秀洗髮精新商品的廣告內容發想，並製作簡報向廣告主提案"
+						]
+					},
+					{
+						"title": "製作社群軟體貼文廣告圖",
+						"list": [
+							"主要參與 Biore 社群軟體貼文設計，使用 Photoshop 與 Illustrator 製作 FaceBook 貼文廣告圖"
+						]
+					}
+				]
+			}
 		}
 	}
 }

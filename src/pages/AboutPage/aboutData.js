@@ -30,3 +30,14 @@ export const skillsData = [
 		key: 'project_management',
 	}
 ]
+
+export const experienceData = [
+	{
+		icon: 'https://i.imgur.com/fRyD84p.png',
+		key: 'rhinoshield'
+	},
+	{
+		icon: 'https://i.imgur.com/uLWWzE8.png',
+		key: 'hakuhodo'
+	}
+]

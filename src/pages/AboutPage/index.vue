@@ -24,17 +24,28 @@
         />
       </div>
     </div>
+    <div class="experience">
+      <h4 class="experience__title" v-t="'about.experience.title'" />
+      <div class="experience__wrap">
+        <ExperienceCard
+          v-for="experience in experienceData"
+          :key="experience.key"
+          :data="experience"
+        />
+      </div>
+    </div>
   </div>
 </template>
 <script>
 import SkillCard from '@/components/SkillCard'
-import { skillsData } from  './aboutData'
+import ExperienceCard from '@/components/ExperienceCard'
+import { skillsData, experienceData } from  './aboutData'
 
 export default {
   name: 'AboutPage',
-  components: { SkillCard },
+  components: { SkillCard, ExperienceCard },
 	setup() {
-    return { skillsData }
+    return { skillsData, experienceData }
 	}
 }
 </script>
@@ -93,6 +104,18 @@ export default {
   &__wrap {
     @include grid(3, $justify-content: space-between, $align-items: start);
     gap: 40px 80px;
+  }
+}
+.experience {
+  padding: 80px 14%;
+  &__title {
+    font-size: $font-lg;
+    margin-bottom: 60px;
+  }
+
+  &__wrap {
+    @include grid(1);
+    gap: 60px 0px;
   }
 }
 </style>
