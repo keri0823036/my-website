@@ -11,7 +11,10 @@
         <div class="intro__content__info">
           <h3 v-t="'about.intro.hello'" />
           <p v-html="$t('about.intro.desc')" />
-          <button v-t="'about.intro.connect'" />
+          <button
+            v-t="'about.intro.connect'"
+            @click="scrollToElement('#footer')"
+          />
         </div>
       </div>
     </div>
@@ -40,13 +43,14 @@
 <script>
 import SkillCard from '@/components/SkillCard'
 import ExperienceCard from '@/components/ExperienceCard'
+import { scrollToElement } from '@/scripts/common'
 import { skillsData, experienceData } from  './aboutData'
 
 export default {
   name: 'AboutPage',
   components: { SkillCard, ExperienceCard },
 	setup() {
-    return { skillsData, experienceData }
+    return { skillsData, experienceData, scrollToElement }
 	}
 }
 </script>

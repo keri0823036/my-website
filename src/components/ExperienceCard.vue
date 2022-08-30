@@ -1,5 +1,8 @@
 <template>
-  <div class="experience-card">
+  <div
+    :class="[`experience-card--${key}`]"
+    class="experience-card"
+  >
     <div class="experience-card__icon">
       <img :src="data.icon" />
     </div>
@@ -93,6 +96,13 @@ export default {
         font-size: 8px;
         margin-right: 4px;
       }
+    }
+  }
+
+  &--rhinoshield {
+    .experience-card__icon > img {
+      width: 80%;
+      margin: 0 auto;
     }
   }
 }
