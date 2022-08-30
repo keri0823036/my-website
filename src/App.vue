@@ -12,21 +12,42 @@
   </div>
   <router-view />
   <div id="footer" class="footer">
-    <div class="footer__social-wrap">
-      <a
-        v-for="socialMedia in socialMediaData"
-        :key="socialMedia.key"
-        :href="socialMedia.link"
-        target="_blank"
-        class="footer_social__icon"
-        v-html="socialMedia.icon"
+    <div class="footer__phone">
+      <p
+        class="footer__phone__title title"
+        v-t="'footer.phone_title'"
+      />
+      <p
+        class="footer__phone__text"
+        v-t="'common.phone'"
       />
     </div>
-    <p
-      class="footer__email"
-      v-t="'common.email'"
-    />
-    <div class="footer__line"></div>
+    <div class="footer__email">
+      <p
+        class="footer__email__title title"
+        v-t="'footer.email_title'"
+      />
+      <p
+        class="footer__email__text"
+        v-t="'common.email'"
+      />
+    </div>
+    <div class="footer__follow">
+      <p
+        class="footer__follow__title title"
+        v-t="'footer.follow_title'"
+      />
+      <div class="footer__follow__icon-wrap">
+        <a
+          v-for="socialMedia in socialMediaData"
+          :key="socialMedia.key"
+          :href="socialMedia.link"
+          target="_blank"
+          class="footer__follow__icon"
+          v-html="socialMedia.icon"
+        />
+      </div>
+    </div>
     <div class="footer__copyright">
       <p v-t="'footer.copyright'" />
       <p v-html="$t('footer.uicon')" />
@@ -94,46 +115,38 @@ export default {
 }
 
 .footer {
-  padding-bottom: 80px;
-  
-  &__social-wrap {
-    @include flex;
+  @include flex($justify-content: space-between, $align-items: flex-start);
+  padding: 80px 14%;
+  border-top: 1px solid $gray-300;
+
+  .title {
+    font-size: $font-m;
     margin-bottom: 12px;
-
-    svg {
-      width: 36px;
-      height: 36px;
-      margin: 0 15px;
-    }
   }
 
-  &__email {
-    @include flex;
-    font-size: $font-xs;
-    text-align: center;
-  }
-
-  &__line {
-    border-bottom: 1px solid $gray-300;
-    margin: 20px auto;
-    opacity: 0.3;
-  }
-
-  &__copyright {
-    @include flex;
   
-    p {
-      color: $gray-300;
-      font-size: $font-xs;
-      text-align: center;
-      
+  &__follow {
+    &__icon {
+      width: 24px;
+      height: 24px;
+
       &:not(:last-of-type) {
         margin-right: 12px;
       }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__copyright {  
+    p {
+      font-size: $font-xs;
     }
 
     a {
-      color: $gray-300;
       text-decoration: underline;
     }
   }

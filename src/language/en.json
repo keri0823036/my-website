@@ -1,6 +1,7 @@
 {
 	"common": {
-		"email": "keri0823036{'@'}gmail.com"
+		"email": "keri0823036{'@'}gmail.com",
+		"phone": "+886 937012662"
 	},
 	"header": {
 		"portfolio": "Portfolio",
@@ -8,7 +9,10 @@
 	},
 	"footer": {
 		"copyright": "Copyright © 2022 Keri T.",
-		"uicon": "UIcons by <a href=\"https://www.flaticon.com/uicons\">Flaticon</a>"
+		"uicon": "UIcons by <a href=\"https://www.flaticon.com/uicons\">Flaticon</a>",
+		"phone_title": "Phone",
+		"email_title": "Email",
+		"follow_title": "Follow"
 	},
 	"home": {
 		"banner": {
