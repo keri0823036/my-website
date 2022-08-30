@@ -6,8 +6,8 @@
     <div class="header__right">
       <router-link v-if="$route.path==='/about'" class="header__right__navi" to="/" v-t="'header.portfolio'" />
       <router-link v-else class="header__right__navi" to="/about" v-t="'header.about'" />
-      <span>|</span>
-      <LangSwitch class="header__right__lang" />
+      <!-- <span>|</span>
+      <LangSwitch class="header__right__lang" /> -->
     </div>
   </div>
   <router-view />
@@ -63,12 +63,12 @@
 <script>
 import { useI18n } from "vue-i18n"
 import { reactive } from '@vue/reactivity';
-import LangSwitch from '@/components/LangSwitch'
+// import LangSwitch from '@/components/LangSwitch'
 import socialMedia from '@/config/socialMedia'
 import { scrollToElement } from '@/scripts/common'
 
 export default {
-  components: { LangSwitch },
+  // components: { LangSwitch },
   setup() {
     const { locale } = useI18n()
     const socialMediaData = reactive(socialMedia)
