@@ -51,19 +51,39 @@ export default {
 	@include flex;
 	padding: 0 14%;
 
+	@include breakpoint(xlpad) {
+		flex-direction: column;
+	}
+
 	&__image {
 		width: 60%;
 		margin-right: 30px;
 		box-shadow: -40px 40px 0 0 $light-green;
+
+		@include breakpoint(xlpad) {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 60px;
+			box-shadow: none;
+		}
 	}
 
 	&__content {
 		width: 40%;
 		margin-left: 30px;
 
+		@include breakpoint(xlpad) {
+			width: 100%;
+			margin-left: 0;
+		}
+
 		&__title {
 			font-size: $font-xl;
 			margin-bottom: 20px;
+
+			@include breakpoint(pad) {
+				font-size: $font-lg;
+			}
 		}
 		&__desc {
 			line-height: 125%;

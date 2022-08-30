@@ -1,5 +1,8 @@
 <template>
-  <div class="skill-card">
+  <div
+		:class="[`skill-card--${data.key}`]"
+		class="skill-card"
+	>
 		<div
 			class="skill-card__icon"
 			v-html="data.icon"
@@ -74,6 +77,18 @@ export default {
 		width: 100%;
 		border: 1px solid $dark-green;
 		margin: 20px 0;
+	}
+
+	&--javascript {
+		.skill-card__icon {
+			:deep(svg) {
+				background-color: $dark-green;
+
+				path {
+					fill: $white;
+				}
+			}
+		}
 	}
 }
 </style>

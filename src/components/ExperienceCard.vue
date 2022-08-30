@@ -61,11 +61,20 @@ export default {
 <style lang="scss" scoped>
 .experience-card {
   @include flex($justify-content: flex-start, $align-items: flex-start);
+  @include  breakpoint(pad) {
+    @include flex($justify-content: center);
+    flex-direction: column;
+  }
 
   &__icon {
     width: 100%;
     max-width: 100px;
     margin-right: 60px;
+
+    @include  breakpoint(pad) {
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
   }
 
   &__content {
@@ -103,6 +112,10 @@ export default {
     .experience-card__icon > img {
       width: 80%;
       margin: 0 auto;
+
+      @include breakpoint(pad) {
+        width: 60%;
+      }
     }
   }
 }

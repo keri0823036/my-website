@@ -60,10 +60,19 @@ export default {
 .banner {
   padding: 100px 0 213px 20%;
 
+  @include  breakpoint(mobile) {
+    padding: 100px 14% 200px;
+  }
+
   &__leaf {
     @include position(absolute, $top: -126px, $right: 10%);
     transform: rotate(180deg);
     z-index: -1;
+
+    svg {
+      width: 90%;
+      max-width: 512px;
+    }
 
     path {
       fill: $gray-100;
@@ -73,11 +82,20 @@ export default {
   &__title {
     font-size: $font-xl;
     margin-bottom: 8px;
+
+    @include  breakpoint(mobile) {
+      font-size: $font-lg;
+    }
   }
+
   &__subtitle {
     font-size: $font-lg;
     color: $gray-300;
     margin-bottom: 32px;
+
+    @include  breakpoint(mobile) {
+      font-size: $font-m;
+    }
   }
 }
 .projects {
@@ -87,6 +105,11 @@ export default {
     @include position(absolute, $top: 50%, $left: 50%);
     transform: translate(-50%, -50%);
     z-index: -1;
+
+    svg {
+      width: 90vw;
+      max-width: 512px;
+    }
   
     path {
       fill: $gray-100;
@@ -102,18 +125,20 @@ export default {
       margin-bottom: 237px;
     }
 
-    &:nth-child(even){
-      flex-direction: row-reverse;
+    @media only screen and (min-width: 901px) {
+      &:nth-child(even){
+        flex-direction: row-reverse;
 
-      .project-card__image {
-        margin-right: 0;
-        margin-left: 30px;
-        box-shadow: 40px 40px 0 0 $light-green;
-      }
+        .project-card__image {
+          margin-right: 0;
+          margin-left: 30px;
+          box-shadow: 40px 40px 0 0 $light-green;
+        }
 
-      .project-card__content {
-        margin-right: 30px;
-        margin-left: 0;
+        .project-card__content {
+          margin-right: 30px;
+          margin-left: 0;
+        }
       }
     }
   }

@@ -119,11 +119,20 @@ export default {
   padding: 80px 14%;
   border-top: 1px solid $gray-300;
 
+  @include breakpoint(xlpad) {
+    flex-direction: column;
+  }
+
+  & > div:not(:last-child) {
+    @include breakpoint(xlpad) {
+      margin-bottom: 24px;
+    }
+  }
+
   .title {
     font-size: $font-m;
     margin-bottom: 12px;
   }
-
   
   &__follow {
     &__icon {
