@@ -10,8 +10,8 @@
         </div>
         <div class="intro__content__info">
           <h3 v-t="'about.intro.hello'" />
-          <p v-t="'about.intro.desc'" />
-          <button v-t="'about.intro.resume'" />
+          <p v-html="$t('about.intro.desc')" />
+          <button v-t="'about.intro.connect'" />
         </div>
       </div>
     </div>
@@ -84,7 +84,7 @@ export default {
 
       h3 {
         font-size: $font-xl;
-        margin-bottom: 48px;
+        margin-bottom: 32px;
       }
 
       p {
@@ -92,7 +92,7 @@ export default {
       }
 
       button {
-        margin-top: 32px;
+        margin-top: 48px;
       }
     }
   }
