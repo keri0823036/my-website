@@ -12,7 +12,7 @@ const socialMedia = [
 			</g>
 		</svg>
 		`,
-		link: 'https://google.com.tw'
+		link: 'www.linkedin.com/in/keri-tsai'
 	},
 	{
 		key: 'github',
@@ -29,7 +29,7 @@ const socialMedia = [
 				<path d="M8.943,19.731c0.017,0.096-0.082,0.196-0.224,0.222c-0.139,0.026-0.268-0.034-0.286-0.13   c-0.017-0.099,0.084-0.198,0.223-0.224C8.797,19.574,8.925,19.632,8.943,19.731L8.943,19.731z"/>
 			</g>
 		`,
-		link: 'https://github.com/cindy08230'
+		link: 'https://github.com/keri0823036'
 	},
 	{
 		key: 'medium',
