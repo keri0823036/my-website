@@ -1,7 +1,8 @@
 {
 	"common": {
 		"email": "keri0823036{'@'}gmail.com",
-		"phone": "+886 937012662"
+		"phone": "+886 937012662",
+		"pipe": "|"
 	},
 	"header": {
 		"portfolio": "Portfolio",
@@ -17,13 +18,16 @@
 	"home": {
 		"banner": {
 			"hello": "Hi, I am Keri!",
-			"subtitle": "25 years old | Front End Engineer | Website Engineer",
+			"subtitle_list": [
+				"Front End Developer",
+				"Website Developer"
+			],
 			"connect": "Connect Me"
 		},
 		"projects": {
 			"rhinoshield": {
 				"title": "RhinoShield",
-				"desc": "Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good."
+				"desc": "Some Infoation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good.Some Infomation is good."
 			},
 			"trip_app": {
 				"title": "Trip web",
