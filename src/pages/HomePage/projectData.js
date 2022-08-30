@@ -1,7 +1,7 @@
 const projectData = [
 	{
 		key: 'rhinoshield',
-		imageUrl: 'https://i.imgur.com/uDSA0Ao.jpg',
+		imageUrl: 'https://i.imgur.com/X2wBayB.png',
 		link: 'https://rhinoshield.tw/'
 	},
 	{

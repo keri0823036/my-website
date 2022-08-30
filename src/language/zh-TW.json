@@ -11,14 +11,17 @@
 		},
 		"projects": {
 			"rhinoshield": {
-				"title": "RhinoShield 犀牛盾",
-				"desc": "自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文"
+				"title": "犀牛盾 官方網站",
+				"desc": "本專案為知名的手機殼品牌－RhinoShield 犀牛盾的官方購物網站，以防摔與手機殼客製化服務聞名，網站更是以自由搭配的理念，提供多樣化的商品預覽模式。",
+				"tech_list": "Vue.js / Nuxt.js / JavaScript / TypeScript / Sass / SCSS / HTML / Shopify API / Liquid"
 			},
 			"trip_app": {
 				"title": "旅遊行程網站",
-				"desc": "自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文自我介紹的內文喔。自我介紹的內文喔。自我介紹的內文"
+				"desc": "和家人出遊時，開車的長輩表示不想要 Google 地圖的連結，只希望我們提供景點的地址，因而產生了這款簡易的旅遊行程 App。年輕人可利用 Google 共享試算表安排景點行程，到了 App 後會透過 Google App Script 抓取行程資料，並整理成想要的格式呈現於 App 之中。",
+				"tech_list": "Vue Cli / Vuex / Google App Script / SASS / HTML"
 			},
-			"view_more": "前往查看"
+			"tech_title": "使用技術：",
+			"view_more": "瞭解更多"
 		}
 	},
 	"about": {

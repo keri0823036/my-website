@@ -12,6 +12,9 @@
 				class="project-card__content__desc"
 				v-t="`home.projects.${data.key}.desc`"
 			/>
+			<p class="project-card__content__tech">
+				{{ $t('home.projects.tech_title') }}{{ $t(`home.projects.${data.key}.tech_list`) }}
+			</p>
 			<a
 				:href="data.link"
 				class="button"
@@ -52,6 +55,10 @@ export default {
 			margin-bottom: 20px;
 		}
 		&__desc {
+			line-height: 125%;
+			margin-bottom: 20px;
+		}
+		&__tech {
 			line-height: 125%;
 			margin-bottom: 60px;
 		}
