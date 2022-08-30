@@ -20,6 +20,9 @@ const i18n = createI18n({
 	locale,
 	legacy: false,
 	fallbackLocale: 'en',
+	missingWarn: false,
+	fallbackWarn: false,
+	warnHtmlMessage: false,
 	messages: {
 		'zh-TW': zh,
 		'en': en
