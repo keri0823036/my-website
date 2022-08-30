@@ -18,7 +18,7 @@
 		"projects": {
 			"rhinoshield": {
 				"title": "犀牛盾 官方網站",
-				"desc": "本專案為知名的手機殼品牌－RhinoShield 犀牛盾的官方購物網站，以防摔與手機殼客製化服務聞名，網站更是以自由搭配的理念，提供多樣化的商品預覽模式。",
+				"desc": "知名手機殼品牌－RhinoShield 犀牛盾的官方購物網站，以防摔與手機殼客製化服務聞名，網站更是以自由搭配的理念，提供多樣化的商品預覽模式。",
 				"tech_list": "Vue.js / Nuxt.js / JavaScript / TypeScript / Sass / SCSS / HTML / Shopify API / Liquid"
 			},
 			"trip_app": {

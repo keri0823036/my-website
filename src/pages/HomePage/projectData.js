@@ -2,7 +2,10 @@ const projectData = [
 	{
 		key: 'rhinoshield',
 		imageUrl: 'https://i.imgur.com/X2wBayB.png',
-		link: 'https://rhinoshield.tw/'
+		link: {
+			en: 'http://rhinoshield.io/',
+			'zh-TW': 'https://rhinoshield.tw/'
+		}
 	},
 	{
 		key: 'trip_app',

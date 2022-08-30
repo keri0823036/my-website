@@ -16,7 +16,7 @@
 				{{ $t('home.projects.tech_title') }}{{ $t(`home.projects.${data.key}.tech_list`) }}
 			</p>
 			<a
-				:href="data.link"
+				:href="data.link[locale] || data.link"
 				class="button"
 				target="_blank"
 				v-t="'home.projects.view_more'"
@@ -25,11 +25,22 @@
 	</div>
 </template>
 <script>
+import { computed } from '@vue/runtime-core'
+import { useI18n } from 'vue-i18n'
 export default {
 	props: {
 		data: {
 			type: Object,
 			required: true
+		}
+	},
+
+	setup() {
+		const { locale } = useI18n()
+		const lang = computed(() => locale.value)
+
+		return {
+			locale: lang
 		}
 	}
 }
