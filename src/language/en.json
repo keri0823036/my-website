@@ -2,7 +2,9 @@
 	"common": {
 		"email": "keri0823036{'@'}gmail.com",
 		"phone": "+886 937012662",
-		"pipe": "|"
+		"pipe": "|",
+		"resume_link": "https://drive.google.com/file/d/1-am-LS2iy_bb6RBQgvMX_en9Z3M4_9Q0/view?usp=sharing",
+		"resume_button_text": "My Resume"
 	},
 	"header": {
 		"portfolio": "Portfolio",
@@ -21,8 +23,7 @@
 			"subtitle_list": [
 				"Front End Developer",
 				"Website Developer"
-			],
-			"connect": "Connect Me"
+			]
 		},
 		"projects": {
 			"rhinoshield": {
@@ -42,8 +43,7 @@
 	"about": {
 		"intro": {
 			"hello": "Hi, I am Keri!",
-			"desc": "I'm a kind and energetic person. On the job, I am responsible and diligent. I hold a Bachelor's degree with a major in Department of Information and Communication which was awarded to me by Yuan Ze University. Influenced by the school, I am interested in information and technology. I like to get a sense of accomplishment from my works, and I am also willing to learn new front-end technologies.<br><br>After graduation, I had been working as a front-end developer for almost 4 years in RhinoShield, which has one of the well-known mobile phone case brand in Taiwan. My duties was developing and maintaining official online stores of 11 countries, includes Taiwan, France, Germany, etc. In addition to improving front-end skills, I also gained a lot of experience that made me become more independent.<br><br>Different from other engineers, I care more about user experience and the visual. I think that's the difference form front-end and other developers. I put myself into making websites and apps which have a good user experience.",
-			"connect": "Connect Me"
+			"desc": "I'm a kind and energetic person. On the job, I am responsible and diligent. I hold a Bachelor's degree with a major in Department of Information and Communication which was awarded to me by Yuan Ze University. Influenced by the school, I am interested in information and technology. I like to get a sense of accomplishment from my works, and I am also willing to learn new front-end technologies.<br><br>After graduation, I had been working as a front-end developer for almost 4 years in RhinoShield, which has one of the well-known mobile phone case brand in Taiwan. My duties was developing and maintaining official online stores of 11 countries, includes Taiwan, France, Germany, etc. In addition to improving front-end skills, I also gained a lot of experience that made me become more independent.<br><br>Different from other engineers, I care more about user experience and the visual. I think that's the difference form front-end and other developers. I put myself into making websites and apps which have a good user experience."
 		},
 		"skills": {
 			"title": "專長與技能",

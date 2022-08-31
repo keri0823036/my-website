@@ -8,9 +8,11 @@
         <div class="intro__content__info">
           <h3 v-t="'about.intro.hello'" />
           <p v-html="$t('about.intro.desc')" />
-          <button
-            v-t="'about.intro.connect'"
-            @click="scrollToElement('#footer')"
+          <a
+            :href="$t('common.resume_link')"
+            target="_blank"
+            class="button"
+            v-t="'common.resume_button_text'"
           />
         </div>
       </div>
@@ -75,7 +77,7 @@ export default {
       @include  breakpoint(pad) {
         max-width: unset;
         margin-right: 0;
-        margin-top: 30px;
+        margin-top: 32px;
       }
     }
 
@@ -91,10 +93,12 @@ export default {
         line-height: 125%;
       }
 
-      button {
+      a {
         margin-top: 48px;
+
         @include  breakpoint(pad) {
-          display: none;
+          margin-top: 32px;
+          max-width: unset;
         }
       }
     }

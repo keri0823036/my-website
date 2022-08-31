@@ -6,7 +6,12 @@
         class="banner__subtitle"
         v-text="subtitle"
       />
-      <button class="banner__button" v-t="'home.banner.connect'" @click="scrollToElement('#footer')" />
+      <a
+        :href="$t('common.resume_link')"
+        target="_blank"
+        class="button"
+        v-t="'common.resume_button_text'"
+      />
     </div>
     <div class="projects">
       <ProjectCard
