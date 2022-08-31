@@ -33,7 +33,7 @@
 			"trip_app": {
 				"title": "Travel Itinerary App",
 				"desc": "When I was planning a travel itinerary, the driver said he wants the address of spot instead of the google map. That's why this app was created. Base on easily use and quick build this app, I use Google sheet as the data base so everyone can edit the itinerary easily. The app just need to call the Google App Script that I have written to get the data and display the itinerary in the app.",
-				"tech_list": "Vue Cli / Vuex / Google App Script / SASS / HTML"
+				"tech_list": "Vue Cli / Vuex / Vue Router / Google App Script / SASS / HTML"
 			},
 			"tech_title": "Skills: ",
 			"view_more": "View More"
